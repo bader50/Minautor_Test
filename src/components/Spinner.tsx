@@ -1,9 +1,7 @@
 import Dots from "react-activity/dist/Dots";
 import "react-activity/dist/Dots.css";
 
-type Props = {};
-
-function Spinner({}: Props) {
+function Spinner() {
   return <Dots color="white" style={{ alignSelf: "center" }} />;
 }
 

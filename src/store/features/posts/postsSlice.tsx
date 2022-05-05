@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { PostListModel, PostModel } from "../../../api/models/PostModel";
+import { PostListModel } from "../../../api/models/PostModel";
 import type { RootState } from "../../store";
 
 // Define a type for the slice state

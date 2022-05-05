@@ -1,8 +1,7 @@
 import { Th, Thead, Tr } from "./UsersTable.styles";
 
-type Props = {};
 
-function TableHeader({}: Props) {
+function TableHeader() {
   return (
     <Thead>
       <Tr>

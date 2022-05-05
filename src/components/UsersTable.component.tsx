@@ -19,7 +19,7 @@ const UsersTable = () => {
     getUsersList().then((response) => {
       dispatch(updateAllUserList(response));
     });
-  }, []);
+  }, [dispatch]);
 
   return userList.length === 0 ? (
     <Spinner />
