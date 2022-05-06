@@ -1,6 +1,6 @@
-import Card from "./Card.component";
-import { PostList } from "./PostContent.styles";
-import { PostListModel } from "../api/models/PostModel";
+import Card from "./Card";
+import { PostList } from "../styles/PostContent";
+import { PostListModel } from "../../../api/models/PostModel";
 
 type Props = {
   userPosts: PostListModel;

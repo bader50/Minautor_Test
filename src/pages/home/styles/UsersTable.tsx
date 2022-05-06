@@ -53,3 +53,10 @@ export const H4 = styled.h4`
   color: #404040;
   letter-spacing: 3px;
 `;
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;

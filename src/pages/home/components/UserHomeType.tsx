@@ -1,5 +1,5 @@
-import { UserListModel } from "../api/models/UserModel";
-import { H4 } from "./UsersTable.styles";
+import { UserListModel } from "../../../api/models/UserModel";
+import { H4 } from "../styles/UsersTable";
 
 type Props = {
   userList: UserListModel;

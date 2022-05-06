@@ -1,5 +1,5 @@
-import { PostModel } from "../api/models/PostModel";
-import { Author, Avatar, CardContainer, H2, Initial, P } from "./Card.styles";
+import { PostModel } from "../../../api/models/PostModel";
+import { Author, Avatar, CardContainer, H2, Initial, P } from "../styles/Card";
 
 type Props = {
   userPost: PostModel;

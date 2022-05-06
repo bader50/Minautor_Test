@@ -1,6 +1,6 @@
-import { Box, ModalContainer, Overlay } from "./Modal.styles";
+import { Box, ModalContainer, Overlay } from "../styles/Modal";
 import { AiOutlineClose } from "react-icons/ai";
-import ModalForm from "./ModalForm.component";
+import ModalForm from "./ModalForm";
 
 type Props = {
   isOpen: boolean;

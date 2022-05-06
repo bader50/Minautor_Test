@@ -1,4 +1,4 @@
-import { Th, Thead, Tr } from "./UsersTable.styles";
+import { Th, Thead, Tr } from "../styles/UsersTable";
 
 
 function TableHeader() {

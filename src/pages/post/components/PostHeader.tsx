@@ -1,10 +1,10 @@
 import { Fragment, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Banner from "./Banner.component";
-import Modal from "./Modal.component";
+import Banner from "../../../ui/Banner.component";
+import Modal from "./Modal.";
 import { ToastContainer } from "react-toastify";
 import { FaArrowLeft, FaPen } from "react-icons/fa";
-import { PostTitle } from "./PostHeader.styles";
+import { PostTitle } from "../styles/PostHeader";
 
 type Props = {
   userName: string;

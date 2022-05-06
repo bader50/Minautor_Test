@@ -8,6 +8,7 @@ export const BannerContainer = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   width: max-content;
+  text-align: center;
 `;
 export const H1 = styled.h1`
   font-family: "Fredoka One";

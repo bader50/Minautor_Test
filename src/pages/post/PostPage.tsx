@@ -1,13 +1,15 @@
 import { Fragment, useEffect, useMemo } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import { selectPosts, updatePosts } from "../store/features/posts/postsSlice";
-import { selectUser } from "../store/features/users/usersSlice";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import Spinner from "../components/Spinner";
-import PostHeader from "../components/PostHeader.component";
-import PostContent from "../components/PostContent.component";
-import { getPostsList } from "../api/fetchData";
-import { AppContainer } from "../App.styles";
+import {
+  selectPosts,
+  updatePosts,
+} from "../../store/features/posts/postsSlice";
+import { selectUser } from "../../store/features/users/usersSlice";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import Spinner from "../../ui/Spinner";
+import PostHeader from "./components/PostHeader";
+import PostContent from "./components/PostContent";
+import { getPostsList } from "../../api/httpService";
 
 function Post() {
   //user id
@@ -30,7 +32,7 @@ function Post() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  //if the sata is lost from redux due to a refresh, go back home to fetch it
+  //if the data is lost from redux due to a refresh, go back home to fetch it
   //(we can use redux persiste if we want to keep the data)
   if (!user) {
     navigate("/");
@@ -42,7 +44,7 @@ function Post() {
   );
 
   return (
-    <AppContainer>
+    <Fragment>
       {user && userPosts ? (
         <Fragment>
           <PostHeader userName={user.name} />
@@ -51,7 +53,7 @@ function Post() {
       ) : (
         <Spinner />
       )}
-    </AppContainer>
+    </Fragment>
   );
 }
 

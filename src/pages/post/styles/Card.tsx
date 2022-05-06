@@ -5,8 +5,9 @@ export const CardContainer = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 32px;
-  width: 540px;
+  padding-right: 32px;
+  padding-top: 10px;
+  width: 440px;
   height: fit-content;
   min-height: 350px;
   background: #ffffff;
@@ -24,7 +25,7 @@ export const H2 = styled.h2`
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 29px;
   color: #000000;
 `;
@@ -41,13 +42,13 @@ export const Avatar = styled.div`
   flex-grow: 0;
   margin: 0px 24px;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 25px;
 `;
 export const P = styled.p`
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.6);
 `;

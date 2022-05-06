@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import { putUserInfo } from "../api/fetchData";
-import { selectUser, updateUser } from "../store/features/users/usersSlice";
-import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { putUserInfo } from "../../../api/httpService";
+import { selectUser, updateUser } from "../../../store/features/users/usersSlice";
+import { useAppDispatch, useAppSelector } from "../../../store/hooks";
 import {
   Button,
   ButtonContainer,
@@ -11,7 +11,7 @@ import {
   Form,
   Input,
   Label,
-} from "./Modal.styles";
+} from "../styles/Modal";
 import "react-toastify/dist/ReactToastify.css";
 
 type Props = {
