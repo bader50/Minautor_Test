@@ -8,6 +8,7 @@ export const CardContainer = styled.div`
   padding-right: 32px;
   padding-top: 10px;
   width: 440px;
+  min-width: 300px;
   height: fit-content;
   min-height: 350px;
   background: #ffffff;
