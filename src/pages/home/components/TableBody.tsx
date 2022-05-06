@@ -12,7 +12,11 @@ function TableBody({ userList }: Props) {
   return (
     <tbody>
       {userList.map((user) => (
-        <Tr onClick={() => navigate(`/post/${user.id}`)} key={user.id}>
+        <Tr
+          role="contentInfo"
+          onClick={() => navigate(`/post/${user.id}`)}
+          key={user.id}
+        >
           <Td>{user.id}</Td>
           <Td>{user.name}</Td>
           <Td>{user.username}</Td>
